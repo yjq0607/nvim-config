@@ -1,10 +1,11 @@
+" a5
 " Better nav for omnicomplete
 " inoremap <expr> <c-j> ("\<C-n>")
 " inoremap <expr> <c-k> ("\<C-p>")
 
 " Use alt + hjkl to resize windows
-nnoremap <M-j>    :resize -2<CR>
-nnoremap <M-k>    :resize +2<CR>
+" nnoremap <M-j>    :resize -2<CR>
+" nnoremap <M-k>    :resize +2<CR>
 nnoremap <M-h>    :vertical resize -2<CR>
 nnoremap <M-l>    :vertical resize +2<CR>
 
@@ -12,13 +13,14 @@ nnoremap <M-l>    :vertical resize +2<CR>
 inoremap <c-u> <ESC>viwUi
 nnoremap <c-u> viwU<Esc>
 
-" TAB in general mode will move to text buffer
-nnoremap <F2> :bnext<CR>
 " SHIFT-TAB will go back
-nnoremap <F3> :bprevious<CR>
+nnoremap <F2> :bprevious<CR>
+" TAB in general mode will move to text buffer
+nnoremap <F3> :bnext<CR>
 
 " Alternate way to save
 nnoremap <C-s> :w<CR>
+inoremap <C-S> <ESC>:w<CR>
 " Alternate way to quit
 nnoremap <C-Q> :q!<CR>
 
@@ -38,21 +40,16 @@ nnoremap <C-l> <C-w>l
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da"
 
-noremap <F5> <ESC>"+p
-
-
 " <Function keys>
     " toggle relative number on/off
 noremap <F4> :set relativenumber!<CR>
 noremap <F5> <ESC>"+p
 inoremap <F5> <c-r>+
+noremap <F10> :w<CR>:!gcc prog.c<CR>:!a<CR>
 noremap <tab> %
 
 " copy into clipboard
 vnoremap <C-c> "+y
-
-inoremap <F5> <c-r>+
-noremap <tab> %
 
 " telescope
 nnoremap <leader>ff <cmd>Telescope find_files<cr>

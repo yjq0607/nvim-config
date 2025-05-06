@@ -1,8 +1,9 @@
+" a5
 " set leader key
 let g:mapleader = "\<Space>"
 
-" colorscheme
-colorscheme desert
+" colour scheme
+colorscheme slate
 
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
@@ -12,13 +13,13 @@ set pumheight=10                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
 set ruler                               " Show the cursor position all the time
 set cmdheight=2                         " More space for displaying messages
-set iskeyword+=-                        " treat dash separated words as a word text object"
-set mouse=""                            " Disable your mouse
+set iskeyword+=-                        " treat dash separated words as a word text object
+set mouse=v                             " Disable your mouse
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
 set t_Co=256                            " Support 256 colors
 set conceallevel=0                      " So that I can see `` in markdown files
-set tabstop=4                           " Insert 2 spaces for a tab
+set tabstop=4                           " Insert 4 spaces for a tab
 set shiftwidth=4                        " Change the number of space characters inserted for indentation
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
 set expandtab                           " Converts tabs to spaces
@@ -46,9 +47,14 @@ set title
 " set mousemodel=popup
 set mousehide
 
-" abbreviations
+
+highlight Comment ctermfg=243 cterm=italic
+highlight function ctermfg=207
+highlight statement ctermfg=70
+
+"  abbreviations
 ab tmr tomorrow
 ab 4got forgot
 ab fyr for your reference
 ab fyi for your interest
-ab afyr the document is attached for your reference.
+ab afyr the document is attached for your reference.ab 4got forgotten
