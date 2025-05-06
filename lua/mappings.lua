@@ -45,7 +45,7 @@ keymap("i", "<F5>", "<c-r>+", opts)
 keymap("n", "<tab>", "%", opts)
 
 -- copy into clipboard
-keymap("v", "<C-c>", '\"+y', opts)
+keymap("v", "<C-c>", '"+y', opts)
 
 -- telescope
 keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
