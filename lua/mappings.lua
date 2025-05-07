@@ -46,6 +46,8 @@ keymap("n", "<tab>", "%", opts)
 
 -- copy into clipboard
 keymap("v", "<C-c>", '"+y', opts)
+-- paste during insert mode with control v
+keymap("i", "<C-v>", '<C-r>+',opts)
 
 -- telescope
 keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
