@@ -7,6 +7,11 @@ keymap("", "<space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+--UltiSnips
+vim.g.UltiSnipsExpandTrigger = "<tab>"
+vim.g.UltiSnipsJumpForwardTrigger = "<tab>"
+vim.g.UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
 
 -- Use alt + hjkl to resize windows
 keymap("n", "<M-h>", ":vertical resize -2<CR>", opts)

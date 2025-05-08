@@ -63,3 +63,5 @@ vim.g['airline_left_sep'] = ''
 vim.g['airline_right_sep'] = ''
 vim.g['airline_theme']='simple'
 
+-- auto-pair
+vim.cmd("au FileType css      let b:AutoPairs = AutoPairsDefine({'/*' : '*/'})")
