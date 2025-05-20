@@ -12,7 +12,7 @@ opt.fileencoding="utf-8"                -- The encoding written to file
 opt.ruler = true                        -- Show the cursor position all the time
 opt.cmdheight=2                         -- More space for displaying messages
 table.insert(opt.iskeyword, "-")        -- treat dash separated words as a word text object
-opt.mouse=v                             -- Disable your mouse
+opt.mouse=""                            -- Disable your mouse
 opt.splitbelow = true                   -- Horizontal splits will automatically be below
 opt.splitright = true                   -- Vertical splits will automatically be to the right
 opt.conceallevel=0                      -- To see `` in markdown files
@@ -37,6 +37,7 @@ opt.timeoutlen=500                      -- By default timeoutlen is 1000 ms
 opt.formatoptions:remove {"c", "r", "o"}-- Stop newline continution of comments
 
 opt.clipboard="unnamedplus"             -- Copy paste between vim and everything else
+opt.wrap = false                        -- nowrap
 
 
 opt.scrolloff=999
