@@ -45,7 +45,6 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- toggle relative number on/off
 keymap("", "<F4>", ":set relativenumber!<CR>", opts)
-keymap("", "<F5>", '<ESC>\"+p', opts)
 keymap("n", "<tab>", "%", opts)
 
 -- copy into clipboard
