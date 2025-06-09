@@ -27,3 +27,14 @@ require("settings")
 require("lazy").setup("plugins")
 
 
+require "telescope".setup {
+    pickers = {
+        help_tags = {
+            mappings = {
+                i = {
+                    ["<CR>"] = "file_vsplit",
+                },
+            },
+        },
+    },
+}
