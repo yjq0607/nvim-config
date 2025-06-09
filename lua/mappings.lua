@@ -26,10 +26,10 @@ keymap("n", "<F2>", ":bprevious<CR>", opts)
 keymap("n", "<F3>", ":bnext<CR>", opts)
 
 -- Alternate way to save
-keymap("n", "<C-s>", ":w<CR>",opts)
-keymap("i", "<C-S>", "<ESC>:w<CR>",opts)
+keymap("n", "<C-s>", ":w<CR>", opts)
+keymap("i", "<C-S>", "<ESC>:w<CR>", opts)
 -- Alternate way to quit
-keymap("n", "<C-Q>", ":q!<CR>",opts)
+keymap("n", "<C-Q>", ":q!<CR>", opts)
 
 
 -- Better tabbing
@@ -43,16 +43,18 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 
-    -- toggle relative number on/off
+-- toggle relative number on/off
 keymap("", "<F4>", ":set relativenumber!<CR>", opts)
 keymap("", "<F5>", '<ESC>\"+p', opts)
-keymap("i", "<F5>", "<c-r>+", opts)
 keymap("n", "<tab>", "%", opts)
 
 -- copy into clipboard
 keymap("v", "<C-c>", '"+y', opts)
 -- paste during insert mode with control v
-keymap("i", "<C-v>", '<C-r>+',opts)
+keymap("i", "<C-v>", '<C-r>+', opts)
+
+-- omnicomplete
+keymap("i", "<C-m>", "<C-x><C-o>", opts)
 
 -- telescope
 keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
