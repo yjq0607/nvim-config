@@ -53,6 +53,9 @@ keymap("v", "<C-c>", '"+y', opts)
 keymap("i", "<C-v>", '<C-r>+', opts)
 
 
+--omnicomplete
+keymap("i", "<C-f>", "<C-x><C-o>", opts)
+
 -- telescope
 keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts)
