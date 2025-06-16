@@ -22,8 +22,8 @@ keymap("i", "<c-u>", "<ESC>viwUi", opts)
 keymap("n", "<c-u>", "viwU<Esc>", opts)
 
 
-keymap("n", "<F2>", ":bprevious<CR>", opts)
-keymap("n", "<F3>", ":bnext<CR>", opts)
+keymap("n", "<leader>bp", ":bprevious<CR>", opts)
+keymap("n", "<leader>bn", ":bnext<CR>", opts)
 
 -- Alternate way to save
 keymap("n", "<C-s>", ":w<CR>", opts)

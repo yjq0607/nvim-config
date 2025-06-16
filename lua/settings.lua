@@ -66,4 +66,5 @@ vim.g['airline_theme'] = 'simple'
 
 -- auto-pair
 vim.cmd("au FileType css      let b:AutoPairs = AutoPairsDefine({'/*' : '*/'})")
+vim.cmd("au FileType c      let b:AutoPairs = AutoPairsDefine({'/*' : '*/'})")
 vim.cmd("au FileType python      let b:AutoPairs = AutoPairsDefine({'__' : '__'})")
